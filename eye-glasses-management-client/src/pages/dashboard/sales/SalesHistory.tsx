@@ -19,13 +19,21 @@ type OnChange = NonNullable<TableProps<any>["onChange"]>;
 type GetSingle<T> = T extends (infer U)[] ? U : never;
 type Sorts = GetSingle<Parameters<OnChange>[2]>;
 
+type TDataType = {
+    productId: string;
+    quantity: number;
+    buyerName: string;
+    saleDate: string;
+    sellerId: string;
+};
+
 const SalesHistory = () => {
     const [selectedRowKeys, setSelectedRowKeys] = useState<React.Key[]>([]);
     const [searchText, setSearchText] = useState("");
     const [searchedColumn, setSearchedColumn] = useState("");
     const searchInput = useRef<InputRef>(null);
     const [sortedInfo, setSortedInfo] = useState<Sorts>({});
-    const [salesData, setSalesData] = useState([]);
+    const [salesData, setSalesData] = useState<TDataType[]>([]);
 
     const handleSearch = (
         selectedKeys: string[],
@@ -186,7 +194,7 @@ const SalesHistory = () => {
     const onChange = (value: string) => {
         const currentDate = new Date();
 
-        let filteredData: any[] = [...data?.data || []];
+        let filteredData: TDataType[] = [...(data?.data || [])];
 
         // Define the date range based on the selected category
         switch (value) {
