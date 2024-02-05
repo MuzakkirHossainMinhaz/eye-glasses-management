@@ -32,11 +32,18 @@ const Login = () => {
             toast.success("Logged in.", { id: toastId, duration: 2000 });
 
             navigate(`/dashboard`);
-        } catch (err) {
-            toast.error("Login failed.", {
-                id: toastId,
-                duration: 2000,
-            });
+        } catch (err: any) {
+            toast.error(
+                `Login failed. ${
+                    err?.data?.errorDetails
+                        ? err?.data?.errorDetails.issues[0].message
+                        : err?.data?.message
+                }`,
+                {
+                    id: toastId,
+                    duration: 2000,
+                }
+            );
         }
     };
 

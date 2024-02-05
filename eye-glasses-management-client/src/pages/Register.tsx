@@ -29,11 +29,18 @@ const Register = () => {
             });
 
             navigate(`/login`);
-        } catch (err) {
-            toast.error("Registration failed.", {
-                id: toastId,
-                duration: 2000,
-            });
+        } catch (err: any) {
+            toast.error(
+                `Registration failed. ${
+                    err?.data?.errorDetails
+                        ? err?.data?.errorDetails.issues[0].message
+                        : err?.data?.message
+                }`,
+                {
+                    id: toastId,
+                    duration: 2000,
+                }
+            );
         }
     };
 
