@@ -4,7 +4,7 @@ Welcome to the Eye Glasses Management Dashboard Server (backend) repository – 
 
 ## Live Demo
 
-Explore the live demo of the Eye Glasses Management Dashboard at [Live Demo URL](#).
+Explore the live demo of the Eye Glasses Management Server API at [Live Demo URL](https://eye-glasses-server.vercel.app).
 
 ## Features
 
@@ -49,13 +49,13 @@ Follow these steps to set up and run the Eye Glasses Management Dashboard (serve
 1. **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/Porgramming-Hero-web-course/l2b2-full-stack-a5-server-side-MuzakkirHossainMinhaz.git
+    git clone https://github.com/MuzakkirHossainMinhaz/eye-glasses-management.git
     ```
 
 2. **Navigate to the Server Directory:**
 
     ```bash
-    cd l2b2-full-stack-a5-server-side-MuzakkirHossainMinhaz
+    cd eye-glasses-management-server
     ```
 
 3. **Install Dependencies:**
@@ -70,9 +70,9 @@ Follow these steps to set up and run the Eye Glasses Management Dashboard (serve
     PORT=5000 or as_your_choice
     NODE_ENV=DEVELOPMENT
     DATABASE_URL='your_database_url'
-    BCRYPT_SALT_ROUNDS=17 or as_your_choice
+    BCRYPT_SALT_ROUNDS=10 or as_your_choice
     JWT_ACCESS_SECRET='your_jwt_access_secret'
-    JWT_ACCESS_EXPIRES_IN=10 or as_your_choice
+    JWT_ACCESS_EXPIRES_IN=10d or as_your_choice
     ```
 
 5. **Run the Server:**
@@ -90,7 +90,3 @@ Follow these steps to set up and run the Eye Glasses Management Dashboard (serve
 We welcome contributions to enhance the Eye Glasses Management Dashboard. If you have suggestions, improvements, or bug fixes, please let us know.
 
 Feel free to reach out to us with any questions or issues. Let's build a robust Eye Glasses Management Dashboard together!
-
-## License
-
-This project is licensed under the [MIT License](LICENSE). Feel free to use and modify the code as needed.

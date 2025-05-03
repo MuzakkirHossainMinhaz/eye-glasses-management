@@ -60,7 +60,7 @@ const Register = () => {
                 >
                     <MyInput type="text" name="username" label="Username:" />
                     <MyInput type="email" name="email" label="Email:" />
-                    <MyInput type="password" name="password" label="Password" />
+                    <MyInput type="password" name="password" label="Password:" />
                     <Button
                         className="my-font"
                         style={{
