@@ -27,14 +27,6 @@ const loginUser = async (payload: IAuth) => {
         _id: user._id,
         email: user.email,
         username: user.username,
-        iat: Date.now(),
-        exp:
-            Date.now() +
-            (process.env.JWT_ACCESS_EXPIRES_IN as unknown as number) *
-                1000 *
-                60 *
-                60 *
-                24, // 1 day,
     };
     const token = createJWT(jwtPayload);
 

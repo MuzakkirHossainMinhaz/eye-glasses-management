@@ -4,7 +4,7 @@ Welcome to the Eye Glasses Management Dashboard Client (frontend) repository! Th
 
 ## Live Demo
 
-Explore the live demo of the Eye Glasses Management Dashboard at [Live Demo URL](#).
+Explore the live demo of the Eye Glasses Management Dashboard at [Live Demo URL](https://eye-glasses-client.vercel.app).
 
 ## Features
 
@@ -22,19 +22,19 @@ Explore the live demo of the Eye Glasses Management Dashboard at [Live Demo URL]
 
 ## Technology Used
 
--   **React:** The frontend is built using React, a popular JavaScript library for building user interfaces.
+- **React:** The frontend is built using React, a popular JavaScript library for building user interfaces.
 
--   **Redux Toolkit:** Redux Toolkit is used for state management and data management.
+- **Redux Toolkit:** Redux Toolkit is used for state management and data management.
 
--   **RTK Query:** RTK Query is used for asynchronous data fetching and data management.
+- **RTK Query:** RTK Query is used for asynchronous data fetching and data management.
 
--   **React-Router-Dom:** React-Router-Dom is used for routing and navigation.
+- **React-Router-Dom:** React-Router-Dom is used for routing and navigation.
 
--   **Ant Design:** Ant Design is used for styling and visual design.
+- **Ant Design:** Ant Design is used for styling and visual design.
 
--   **Typescript:** TypeScript is used for type checking and code quality.
+- **Typescript:** TypeScript is used for type checking and code quality.
 
--   **Vite:** Vite is used for bundling and optimizing the frontend.
+- **Vite:** Vite is used for bundling and optimizing the frontend.
 
 ## Getting Started
 
@@ -42,33 +42,33 @@ Follow these steps to set up and run the Eye Glasses Management Dashboard (clien
 
 1. **Clone the Repository:**
 
-    ```bash
-    git clone https://github.com/Porgramming-Hero-web-course/l2b2-full-stack-a5-client-side-MuzakkirHossainMinhaz.git
-    ```
+   ```bash
+   git clone https://github.com/MuzakkirHossainMinhaz/eye-glasses-management.git
+   ```
 
 2. **Navigate to the Client Directory:**
 
-    ```bash
-    cd l2b2-full-stack-a5-client-side-MuzakkirHossainMinhaz
-    ```
+   ```bash
+   cd eye-glasses-management-client
+   ```
 
 3. **Install Dependencies:**
 
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
 4. **Configure Environment Variables:**
 
-    ```js
-    VITE_API_BASE_URL = "http://localhost:5000" or your_backend_server_URL
-    ```
+   ```js
+   VITE_API_BASE_URL = "http://localhost:5000" or your_backend_server_URL
+   ```
 
 5. **Run the Application:**
 
-    ```bash
-    npx vite
-    ```
+   ```bash
+   npx vite
+   ```
 
 6. **Explore the Dashboard:**
    Access the dashboard through the provided URL and start managing eyeglasses efficiently.
@@ -78,7 +78,3 @@ Follow these steps to set up and run the Eye Glasses Management Dashboard (clien
 We welcome contributions to enhance the Eye Glasses Management Dashboard. If you have suggestions, improvements, or bug fixes, please let us know.
 
 Feel free to reach out to us with any questions or issues. Let's build a robust Eye Glasses Management Dashboard together!
-
-## License
-
-This project is licensed under the [MIT License](LICENSE). Feel free to use and modify the code as needed.
