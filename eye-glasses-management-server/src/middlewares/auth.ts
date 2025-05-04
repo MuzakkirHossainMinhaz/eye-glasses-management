@@ -14,16 +14,23 @@ const auth = () => {
         }
 
         // check if token is valid
-        const { _id, email, exp } = verifyJWT(token);
+        const { valid, expired, decoded } = verifyJWT(token);
+
+        // check if decoded is valid
+        if (!valid) {
+            throw new AppError(httpStatus.UNAUTHORIZED, "Unauthorized Access");
+        }
+
+        // check if token is expired
+        if (expired) {
+            throw new AppError(httpStatus.UNAUTHORIZED, "Unauthorized Access");
+        }
+
+        const { _id, email } = decoded as any;
 
         // check if user exists
         const user = await UserModel.findOne({ _id, email });
         if (!user) {
-            throw new AppError(httpStatus.UNAUTHORIZED, "Unauthorized Access");
-        }
-
-        // check if token is not expired
-        if (Date.now() >= exp) {
             throw new AppError(httpStatus.UNAUTHORIZED, "Unauthorized Access");
         }
 

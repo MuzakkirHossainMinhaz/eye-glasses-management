@@ -9,6 +9,4 @@ export interface IJWTPayload {
     _id: Types.ObjectId;
     email: string;
     username: string;
-    iat: number;
-    exp: number;
 }

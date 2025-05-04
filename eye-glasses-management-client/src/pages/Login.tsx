@@ -62,7 +62,7 @@ const Login = () => {
                     }}
                 >
                     <MyInput type="text" name="username" label="Username:" />
-                    <MyInput type="password" name="password" label="Password" />
+                    <MyInput type="password" name="password" label="Password:" />
                     <Button
                         className="my-font"
                         style={{
